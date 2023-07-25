@@ -1,0 +1,328 @@
+
+:root{--blue:#007bff;
+    --indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;
+    --red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;
+    --green:#28a745;--teal:#20c997;--cyan:#17a2b8;
+    --white:#fff;--gray:#6c757d;--gray-dark:#343a40;
+    --primary:#007bff;--secondary:#6c757d;--success:#28a745;
+    --info:#17a2b8;--warning:#ffc107;--danger:#dc3545;
+    --light:#f8f9fa;--dark:#343a40;
+    --color-Boos1:#dd0067;
+    --color-Boos2:#20c997;
+}
+
+:root{
+    --calor1:rgb(0, 185, 83);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+}
+body{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: calc(70em/16);
+    background-color: #f7828200;
+    backdrop-filter: blur(38px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
+}
+a.logo{
+    width: 4.2em;
+    top: -19px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+.Pr{
+    position: relative;
+    /* top: -12px; */
+    /* margin: -139px; */
+    width: calc(10em/16);
+    height: calc(28em/16);
+
+}
+.serch-inp{
+
+    padding: 10px;
+    display: inline-block;
+    width: calc(36em/16);
+    height: calc(41em/16);
+    border-radius: 15px;
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+    transition: ease 0.7s;
+    cursor: pointer;
+}
+
+.serch{
+    display: inline-block;
+    width: calc(35em/16);
+    height: calc(35em/16);
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    z-index: 2;
+    transition: ease 0.7s;
+}
+.serch::after,.serch::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+}
+.serch::after{
+    width: calc(2em/16);
+    height: calc(20em/16);
+    background: white;
+    top: 16px;
+    right: 8px;
+    transform: rotate(324deg);
+}
+.serch::before{
+    width: calc(20em/16);
+    height: calc(20em/16);
+    background: #f5f5dc00;
+    border-radius: 27px;
+    border: 2px solid white
+}
+.serch-inp:focus{
+    width: calc(189em/16);
+    opacity: 1;
+    left: 27px;
+    border-radius: 6px 15px 15px 6px;
+    z-index: 1;
+    cursor: text;
+
+}
+
+.list-link a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight:400 ;
+    margin-right:10px ;
+    transition: 0.7s cubic-bezier(0.96, 0.63, 0.22, 0.68);
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0.96, 0.63, 0.22, 0.68);
+    transition-delay: 0s;
+    transition-property: all;
+   
+    
+}
+.list-link a:hover{
+    color: rgb(255, 145, 0);
+    
+}
+div.rec-srch{
+    width: 281px;
+    height: 30px;
+    border: 2px black solid;
+    border-radius: 32px;
+}
+
+
+
+.img img{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 8px;
+    z-index: -1;
+}
+
+.tow {
+    background-color: aquamarine;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    box-shadow: rgb(35 33 34) 2px 1px 17px 2px;
+    margin: 0;
+    z-index: 50;
+    position: relative;
+}
+.tow h1{
+    margin-bottom:10px ;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.tow h4{
+    margin-bottom:10px ;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight:500 ;
+
+}
+.tow h6{
+    margin-bottom:10px ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.5em;
+}
+section.books{
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    justify-content: star;
+    flex-direction: row;
+    
+    
+
+}
+.header-books{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.header-books p.head{
+    text-transform: capitalize;
+    color: var(--calor1);
+    font-weight: 300;
+    font-size: 1em;
+    background-color: #fff;
+    width: calc(600em/16);
+    height: calc(50em/16);
+    padding: 10px;
+    border-left: 8px solid rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(213 213 211);
+    border-top: 2px solid rgb(213 213 211);
+    margin-top: 20px ;
+    position: sticky;
+    top: 71px;
+}
+
+
+nav{
+    min-width: calc(227em/16);
+    height: calc(420em/16);
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    position: sticky;
+    top: 147px;
+    
+}
+
+.nav-books .title-section h3{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: left;
+    border-bottom: rgb(10, 255, 136) solid 3px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.sheldren-section a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    margin: 10px 0px;
+    display: flex;
+    
+}
+.sheldren-section a:hover{
+    text-decoration: underline;
+    
+    
+}
+
+.card-sh{
+    max-width: calc(200em/16);
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    margin: 15px;
+    
+
+
+}
+.img2 img{
+    width: 100%;
+    border-radius: 5px;
+    padding: 4px;
+    border: 2px solid #000;
+    
+}
+.infi-books p{
+    text-align: center;
+}
+.infi-books .title{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.infi-books a{
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 0.9;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+}
+.infi-books a:hover{
+        text-decoration: underline;
+        text-shadow: aquamarine 1px 1px 10px;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+footer h5{
+    text-align:center ;
+    font-size: 1.2em;
+    font-weight:400 ;
+
+}
+button{
+    color:var(--white);
+    background-color: #20c997;
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    opacity: 0.7;
+    margin: 20px;
+}
+button:hover{
+    opacity: 1;
+}
